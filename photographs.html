@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="particles.js-master/particles.js-master/particles.js"></script>
+</head>
+<body>
+   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <div id="particles-js"></div>
+    <h1> PicbyVaibs</h1>
+    <section class="image-section">
+    
+    <div class="image ">
+        <img src="photos/20230211_181542.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220511_160840.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/IMG_20230828_123119_994.jpg" alt="Description of Image 2">
+    </div>
+    <div class="drawing">
+        <img src="photos/IMG_20230828_123119_753.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220307_160128_02.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220517_113421.jpg" alt="Description of Image 2">
+    </div>
+    
+    <div class="image">
+        <img src="photos/IMG_20230828_123119_912.jpg" alt="Description of Image 2">
+    </div>
+    
+   
+   
+    <div class="image">
+        <img src="photos/20221022_134635.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20230203_173030.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220514_151028.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20230505_201621.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20230203_173033.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/p1.jpg" alt="Description of Image 1">
+    </div>
+    <div class="image">
+        <img src="photos/IMG_20230828_123119_348.jpg" alt="Description of Image 2">
+    </div>
+    
+    <div class="image">
+        <img src="photos/20221022_134629.jpg" alt="Description of Image 2">
+    </div>
+
+    <div class="image">
+        <img src="photos/20230217_085324.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220517_113619.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20230825_105308.jpg" alt="Description of Image 2">
+    </div>
+    
+    <div class="image">
+        <img src="photos/20230825_122708.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/IMG_20230828_123119_283.jpg" alt="Description of Image 2">
+    </div>
+    <div class="image">
+        <img src="photos/20220518_122918.jpg" alt="Description of Image 2">
+    </div>
+   
+    
+    
+
+    <!-- Repeat for all your images -->
+</section>
+
+
+    <script>
+
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 5500,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ["#FAFAFA", "#A3C3D9", "#FFC3E9", "#D1A3FF"]
+                },
+                size: {
+                    value: 2,
+                    random: [1, 3.5],
+                    anim: {
+                        enable: true,
+                        speed: 1.5,
+                        size_min: 0.1
+                    }
+                },
+                line_linked: {
+                    enable: false,
+                },
+                shape: {
+                    type: "circle",
+                },
+                opacity: {
+                    value: 0.7,
+                    random: [0.5, 1],
+                    anim: {
+                        enable: true,
+                        speed: 0.1,
+                        opacity_min: 0.3
+                    }
+                },
+                move: {
+                    speed: 0.5,
+                    direction: "none",
+                    random: true,
+                    out_mode: "out"
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: false
+                    },
+                    onclick: {
+                        enable: false
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+        ScrollReveal().reveal('.image', { 
+        delay: 200,
+        distance: '50px',
+        origin: 'bottom',
+        reset: true,
+        interval: 100
+    });
+        </script>
+</body>
+<footer>
+    <p>© 2023 by Vaibhav Lakshmi Santhanam.</p>
+</footer>
+</html>

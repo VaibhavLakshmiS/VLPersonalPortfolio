@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="particles.js-master/particles.js-master/particles.js"></script>
+</head>
+<body>
+
+<article class="resume" data-page="resume">
+    <div id="particles-js"></div>
+    <header>
+        <h2 class="h2 article-title glow-cyan">Vaibhav Lakshmi Santhanam's Resume</h2>
+    </header>
+
+    <!-- EDUCATION SECTION -->
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3 glow-cyan">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">University of Toronto</h3>
+                <span>Sept 2021 — Aug 2025</span>
+                <h4 class="timeline-text">Bachelors in Computer Science Specialist | Software Engineering Stream and Minor in Economics</h4>
+            </li>
+        </ol>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="code-outline"></ion-icon>
+            </div>
+            <h3 class="h3 glow-cyan">Skills</h3>
+        </div>
+
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Languages</h3>
+                <p class="timeline-text">C, Python, Java, Assembly, HTML, SQL</p>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Tools</h3>
+                <p class="timeline-text">Git, Android Studio, Visual Studio Code, Mars, Eclipse, Intellij</p>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Platforms</h3>
+                <p class="timeline-text">Linux/Unix, Windows</p>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Others</h3>
+                <p class="timeline-text">Data structures and algorithms, Object Oriented Programming, Operating Systems, Agile (Scrum), GDB, Valgrind</p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3 glow-cyan">Experience</h3>
+        </div>
+
+        <ol class="timeline-list">
+            <!-- Add work experiences here -->
+        </ol>
+    </section>
+
+    <!-- TECHNICAL PROJECTS SECTION -->
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3 glow-cyan">Technical Projects</h3>
+        </div>
+
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">System Monitoring Tool with concurrency</h3>
+                <ul  class="timeline-text">
+                    <li>Reports metrics of the utilization of a given Unix system.</li>
+                    <li>Graphically displays CPU usage.</li>
+                    <li>Uses pipes for communication between child and parent processes.</li>
+                    <li>Coded entirely in C within the kernel.</li>
+                </ul>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Recreating the System-Wide FD Tables</h3>
+                <ul  class="timeline-text">
+                    <li>Displays tables used by the OS for open files, FD assignation, and processes.</li>
+                    <li>Allows PID input to display associated FDs for that process.</li>
+                    <li>Developed using C in the kernel.</li>
+                </ul>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">GRAFFIT</h3>
+                <ul  class="timeline-text">
+                    <li>Simulated social media platform based on graph algorithms and structures to model user interactions.</li>
+                    <li>Entirely coded in C.</li>
+                </ul>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Quad Tree</h3>
+                <ul  class="timeline-text">
+                    <li>Decomposes input images hierarchically into squares of uniform color.</li>
+                    <li>Allows custom image input by users.</li>
+                    <li>Developed using C.</li>
+                </ul>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Android Application: Prep Well</h3>
+                <ul  class="timeline-text">
+                    <li>Mobile app to assist students in academic planning and course management.</li>
+                    <li>Developed using JAVA and XML in Android Studio.</li>
+                    <li>Used Firebase Fire store for user data storage and implemented MVP architecture for login/signup.</li>
+                    <li>Adopted agile methodology with daily scrums.</li>
+                </ul>
+            </li>
+    
+            <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Be Positive</h3>
+                <ul  class="timeline-text">
+                    <li>2D platform game developed using the MIPS assembly language and MARS software.</li>
+                    <li>Demonstrated proficiency with low-level languages.</li>
+                </ul>
+            </li>
+    
+        </ol>
+    </section>
+
+
+
+</article>
+<div class="center-container">
+    <a href="Resume Vaibhav.pdf" download>Download My Resume</a>
+</div>
+<footer>
+    <p>© 2023 by Vaibhav Lakshmi Santhanam.</p>
+    
+</footer>
+<script>
+    particlesJS('particles-js', {
+            particles: {
+            number: {
+                value: 5500,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: ["#FAFAFA", "#A3C3D9", "#FFC3E9", "#D1A3FF"]
+            },
+            size: {
+                value: 2,
+                random: [1, 3.5],
+                anim: {
+                    enable: true,
+                    speed: 1.5,
+                    size_min: 0.1
+                }
+            },
+            line_linked: {
+                enable: false,
+            },
+            shape: {
+                type: "circle",
+            },
+            opacity: {
+                value: 0.7,
+                random: [0.5, 1],
+                anim: {
+                    enable: true,
+                    speed: 0.1,
+                    opacity_min: 0.3
+                }
+            },
+            move: {
+                speed: 0.5,
+                direction: "none",
+                random: true,
+                out_mode: "out"
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: false
+                },
+                onclick: {
+                    enable: false
+                },
+                resize: true
+            }
+        },
+        retina_detect: true
+    });
+    
+</script>
+
+</body>
+
+</html>

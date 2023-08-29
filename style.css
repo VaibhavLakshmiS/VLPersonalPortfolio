@@ -1,0 +1,394 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FAFAFA;
+    background: linear-gradient(to bottom, #020916, #011d31 60%, #0f014d 100%); /* Night sky gradient */
+    line-height: 1.6;
+    overflow: auto; /* Allow scrolling */
+    position: relative; /* Relative positioning for body */
+    height: 100vh; /* Set height to the full viewport height */
+}
+
+#particles-js {
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Stay below other content */
+}
+
+/* Common Section Styles */
+section {
+    padding: 2rem 0;
+    width: 80%;
+    margin: 50px auto;  /* Added vertical margins */
+    background-attachment: fixed; /* Gives the parallax effect */
+    min-height: 60vh; /* Reduced height */
+    border-radius: 15px; /* Optional rounded corners */
+}
+
+footer {
+    background-color: rgba(24, 52, 70, 0.9);
+    color: #FAFAFA;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+a {
+    color: white;
+  }
+
+:root {
+    --color1: rgba(2, 47, 64, 0.9);
+    --color2: rgba(11, 24, 66, 0.9);
+    --color3: rgba(1, 28, 78, 0.9);
+    --color4: rgba(24, 52, 70, 0.9);
+    --color5: rgba(4, 110, 143, 0.9);
+}
+#introduction {
+    background-color: var(--color2);
+    padding-left: 50px;
+    color: #FAFAFA;
+}
+#about {
+    padding-left: 30px;  /* Adjust the value as per your requirements */
+    background-color: var(--color1);
+    color: #FAFAFA;
+}
+
+
+#projects {
+    background-color: var(--color3);
+    color: #FAFAFA;
+}
+
+#hobbies {
+    background-color: var(--color5);
+    color: #FAFAFA;
+}
+
+#contact {
+    background-color: var(--color4);
+    color: #FAFAFA;
+}
+.profile-pic {
+    float: right;  /* This makes the image float to the left */
+    margin-right: 20px;  /* Adds some space between the image and the adjacent text */
+    width: 180px;  /* Adjust as per your requirements */
+    height: auto;  /* Maintains the aspect ratio */
+    border-radius: 50%;  /* If you want a circular profile picture */
+    border: 3px solid var(--color3);  /* Optional: adds a border to the image */
+}
+.pic {
+    float: right;  /* This makes the image float to the left */
+    margin-right: 20px;  /* Adds some space between the image and the adjacent text */
+    max-width: 180px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+}
+#typing-output {
+    overflow-wrap: break-word;
+    font-family: 'Arial', sans-serif;
+    color: #FAFAFA;
+    font-size: 1.5rem;
+    white-space: normal;
+    animation: cursorBlink 1s infinite, typingCursor 1s infinite;
+}
+
+
+.about-content {
+    padding-left: 30px; /* Add padding to the left to space the text a bit */
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(10%); /* Gives a slight move up effect when faded in */
+    visibility: hidden; /* This ensures the section is not visible at all */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Provides a smooth fade-in and move effect */
+}
+
+.drawings-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.drawing {
+    position: relative;  /* make this a positioning root for children */
+    overflow: hidden;    /* hides the caption outside the drawing */
+}
+
+.drawing img {
+    max-width: 100%;
+    transition: transform 0.3s; 
+}
+
+.drawing:hover img {
+    transform: scale(1.05); 
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;           /* place the caption at the bottom of the image */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);  /* semi-transparent black background */
+    color: white;
+    padding: 5px 10px;
+    transform: translateY(100%);    /* initially move it out of the view */
+    transition: transform 0.3s;    /* transition effect */
+    text-align: center;
+}
+
+.drawing:hover figcaption {
+    transform: translateY(0);      /* reset translation to its initial state on hover */
+}
+
+.navigation-links ul {
+    list-style-type: none;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap; /* This will allow the buttons to wrap to the next line if there isn't enough space */
+    justify-content:left;
+    gap: 20px;  /* Adjust the gap for the space between links */
+}
+
+.navigation-links li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #fff;  /* White text color */
+    font-weight: bold;
+    padding: 10px 15px;
+   
+    transition: all 0.3s;
+    background: linear-gradient(to right, #41e9ff, #28b3da);  /* Add gradient background */
+    border-radius: 15px;  /* Rounded corners for the gradient box */
+    box-shadow: 0 0 15px rgba(100, 152, 203, 0.6);  /* Glowing effect */
+}
+
+.navigation-links a:hover {
+    background: linear-gradient(to right, #706acb, #94a4f7);  /* Inverted gradient on hover */
+    box-shadow: 0 0 25px rgba(93, 93, 186, 0.8), 
+                0 0 50px rgba(60, 66, 136, 0.6);  /* Enhanced glowing effect on hover */
+}
+
+
+
+@keyframes typingCursor {
+    0% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes cursorBlink {
+    0% { opacity: 1; }
+    0% { opacity: 0; }
+    0% { opacity: 1; }
+}
+
+#contact .social-icons {
+
+    display: flex;
+    align-items: center; /* Vertically center the icons */
+    justify-content: center; /* Horizontally center the icons */
+    flex-direction: row; /* Stack icons vertically */
+}
+
+#contact .social-icons a {
+    padding-bottom: 15px;
+    margin: 20px; /* space around icons */
+    text-align: center; /* ensures icons inside the anchor tags are centered */
+}
+
+/* Projects Section */
+#projects {
+    background-color: rgba(24, 52, 70, 0.9);  
+    align-items: center;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 2rem;
+    width: 80%;
+    margin: 2rem auto 0;
+}
+
+.project-card {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+    background-color: #2a3759;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.project-card img {
+    width: 60%;
+    border-radius: 8px;
+}
+
+.project-card h3, .project-card p, .project-card a {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: #58a6ff;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #82c0ff;
+}
+
+@media (max-width: 768px) { /* This is a common breakpoint for tablets and phones */
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr); /* Only one project per row */
+        width: 90%; /* Adjust width as per your liking */
+    }
+
+    .project-card {
+        width: 100%; /* Take full width of the grid on mobile */
+    }
+}
+
+.glow-blue {
+    box-shadow: 0 0 5px 5px rgba(1, 213, 255, 0.612);
+}
+
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.image {
+    position: relative;  /* make this a positioning root for children */
+    overflow: hidden;    /* hides the caption outside the drawing */
+}
+
+.img {
+    max-width: 100%;
+    transition: transform 0.3s; 
+}
+
+.image:hover img {
+    transform: scale(1.05); 
+}
+
+
+.gamepic {
+    width: 80px;  /* adjust as needed */
+    height: 80px; /* adjust as needed */
+}
+@keyframes wave-animation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;  /* This makes the hand pivot around the wrist rather than the center */
+}
+
+.led-ticker {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', Courier, monospace;  /* This gives it a more "digital" look */
+    font-size: 1.5rem;
+    color: limegreen;  /* LED green color */
+}
+
+.quotes {
+    display: inline-block;
+    animation: ticker 60s linear infinite;
+    padding-left: 100%;
+}
+
+.quotes span {
+    padding-right: 3rem;  /* Gap between quotes */
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
