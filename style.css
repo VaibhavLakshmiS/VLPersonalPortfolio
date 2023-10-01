@@ -249,8 +249,8 @@ figcaption {
 
 .card-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+     width: 100%;
+    height: 100%; 
     transform-style: preserve-3d;
     transition: transform 0.3s;
     background-color: #2a3759;
@@ -275,6 +275,7 @@ figcaption {
     justify-content: center;
     padding: 2rem;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .card-front {
