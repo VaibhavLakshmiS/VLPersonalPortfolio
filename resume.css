@@ -22,6 +22,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.timeline-text li {
+    line-height: 1.6;  /* Adjust this value to your preference; a higher value means more spacing */
+}
 
 .article-title {
     text-align: center;
