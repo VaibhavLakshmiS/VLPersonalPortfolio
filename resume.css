@@ -95,8 +95,6 @@ body {
     display: flex;
     justify-content: center;  /* centers children horizontally */
     align-items: center;      /* centers children vertically */
-    height: 100vh;            /* sets the container to the full height of the viewport */
-    margin: 0;                /* removes any default margin */
 }
 
 a {
@@ -107,4 +105,8 @@ a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.right-align {
+    text-align: right;
 }
